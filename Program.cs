@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LINQExamplesQueries
 {
@@ -7,10 +8,11 @@ namespace LINQExamplesQueries
     {
         static void Main(string[] args)
         {
-            string[] names = { "Tom", "Dick", "Harry" }; 
-            IEnumerable<string> filteredNames = System.Linq.Enumerable.Where(names, n => n.Length >= 4); 
-            foreach (string n in filteredNames) 
-                Console.WriteLine(n);
+            QuerySyntax querySyntax = new QuerySyntax();
+            querySyntax.querySyntax();
+
+
+
 
         }
     }
